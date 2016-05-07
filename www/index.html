@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>TODOアプリ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="components/loader.js"></script>
+</head>
+<body>
+
+<header id="top-toolbar">
+    <h1>TODOアプリ</h1>
+    <div class="subtitle"></div>
+</header>
+
+<br />
+
+<div class="table">
+    <div class="table-header">
+        <h2>TODOアプリ</h2>
+    </div>
+    <div class="table-body">
+        <div class="table-cell tappable right-arrow" id="login-page">
+            <div class="table-cell-inner">
+                <h3 class="table-cell-title">ログイン</h3>
+                <p class="table-cell-subtitle">
+                    ログインコメント
+                </p>    
+            </div>
+        </div>
+                <div class="table-cell tappable right-arrow" id="signup-page">
+            <div class="table-cell-inner">
+                <h3 class="table-cell-title">アカウント作成</h3>
+                <p class="table-cell-subtitle">
+                    アカウント作成コメント
+                </p>    
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/vendor/ncmb-1.2.1.min.js"></script>
+<script src="js/vendor/tappable.js"></script>
+<script src="js/vendor/zepto.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/index.js"></script>
+<script>IndexPageController.init();</script>
+
+</body>
+</html>
